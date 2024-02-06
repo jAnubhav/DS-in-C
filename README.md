@@ -1,2 +1,2 @@
 # DS-in-C
-Programs in C using different Data Structures.
+This repository contains various C programs demonstrating the implementation of different data structures and showcasing the solution of many algorithms.
