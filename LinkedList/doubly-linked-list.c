@@ -230,7 +230,7 @@ int main()
         case 6:
             displayAll(head);
             break;
-            case 7:
+        case 7:
             reverseDisplayAll(end);
             break;
         case 8:
