@@ -70,7 +70,7 @@ void insertNode(node *head)
         scanf("%d", &new->data);
 
         printf("Enter element after which node is to be inserted: ");
-        scanf("%d", elem);
+        scanf("%d", &elem);
 
         while (head && head->data != elem)
             head = head->link;
