@@ -185,6 +185,20 @@ void displayAll(node *head)
         printf("Linked List is empty.");
 }
 
+void reverseDisplayAll(node *end) {
+    if (end)
+    {
+        printf("The elements of the Linked List are:\n");
+        while (end)
+        {
+            printf("%-6d", end->data);
+            end = end->prev;
+        }
+    }
+    else
+        printf("Linked List is empty.");
+}
+
 int main()
 {
     ptrs ptr = createLinkedList();
@@ -193,7 +207,7 @@ int main()
     int ch, flag = 1;
     while (flag)
     {
-        printf("\nMenu-driven Program:\n\n1) Insert at Start\n2) Insert Before\n3) Insert After\n4) Delete at Start\n5) Delete Node\n6) Display all Elements\n7) Exit\n\nEnter choice: ");
+        printf("\nMenu-driven Program:\n\n1) Insert at Start\n2) Insert Before\n3) Insert After\n4) Delete at Start\n5) Delete Node\n6) Display all Elements\n7) Reverse Display all Elements\n8) Exit\n\nEnter choice: ");
         scanf("%d", &ch);
         printf("\n");
         switch (ch)
@@ -216,7 +230,10 @@ int main()
         case 6:
             displayAll(head);
             break;
-        case 7:
+            case 7:
+            reverseDisplayAll(end);
+            break;
+        case 8:
             printf("Exiting...");
             flag = 0;
             break;
