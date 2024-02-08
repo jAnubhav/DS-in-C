@@ -1,3 +1,8 @@
+/*
+This program checks the complete sentence for Palindrome condition.
+Eg: A man, a plan, a canal – Panama => Palindrome
+*/
+
 #include <stdio.h>
 #include <string.h>
 #define N 100
@@ -23,5 +28,5 @@ int main()
     char string[N];
     printf("Enter string: ");
     fgets(string, N, stdin);
-    printf("%s", (palindrome(strlwr(string), strlen(string))) ? "Palindrome" : "Not Palindrome");
+    printf("%s", (palindrome(strlwr(string), strlen(string) - 1)) ? "Palindrome" : "Not Palindrome");
 }
